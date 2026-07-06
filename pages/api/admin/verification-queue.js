@@ -47,7 +47,7 @@ export default function VerificationQueue() {
         try {
             await adminFetch('/admin/verification-queue/reassign', {
                 method: 'POST',
-                body: { listing_id = listingId, new_agent_id: newAgentId},
+                body: { listing_id: listingId, new_agent_id: newAgentId},
 
             });
             setReassigning(null);
