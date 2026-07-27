@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { getLandlordToken, getLandlordUserId } from '../../lib/landlordAuth';
 import { landlordFetch } from '../../lib/landlordFetch';
-import { uploadListingPhoto, deleteListingPhoto } from '../../lib/uploadPhoto';
+import { uploadListingPhoto, deleteListingPhoto } from '../../lib/uploadphoto';
 
 const STEPS = ['Type', 'Location', 'Amenities', 'Photos', 'Review'];
 
