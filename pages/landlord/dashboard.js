@@ -59,7 +59,9 @@ export default function LandlordDashboard() {
       <header className="topbar">
         <Link href="/" className="brand"><span className="dot" /> Nyumba</Link>
         <div className="topbar-actions">
+            
           <Link href="/landlord/list-property" className="new-listing">+ New listing</Link>
+          <Link href="/landlord/inbox" className='inbox-link'>Inbox</Link>
           <button className="logout" onClick={async () => { await logoutLandlord(); router.push('/landlord/login'); }}>
             Log out
           </button>
@@ -152,6 +154,9 @@ const sharedStyles = `
     background: #e8a33d; color: #29200a; padding: 8px 16px; border-radius: 8px;
     font-size: 13px; font-weight: 600; text-decoration: none;
   }
+    .inbox-link { color: rgba(244, 242,238,0.75); font-size: 13px; text-decoration: none; }
+    .inbox-link:hover { color: #f4f2ee; }
+
   .logout { background: none; border: none; color: rgba(244,242,238,0.6); font-size: 13px; cursor: pointer; }
   main { max-width: 900px; margin: 0 auto; padding: 32px 24px 80px; }
   h1 { font-size: 22px; color: #0d2018; margin: 0 0 20px; }
