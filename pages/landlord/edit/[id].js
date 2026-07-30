@@ -5,7 +5,7 @@ import { getLandlordToken, getLandlordUserId } from '../../../lib/landlordAuth';
 import { landlordFetch } from '../../../lib/landlordFetch';
 import { fetchListing } from '../../../lib/publicFetch';
 import { uploadListingPhoto, deleteListingPhoto } from '../../../lib/uploadPhoto';
-
+import InquiryForm from '@/components/InquiryForm';
 const AMENITIES = [
   ['water', 'Water'], ['electricity', 'Electricity'], ['security', 'Security'],
   ['parking', 'Parking'], ['wifi', 'WiFi'], ['solar', 'Solar'],
